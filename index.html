@@ -27,6 +27,9 @@
     .rhythm-grid { grid-template-columns: 1fr !important; }
     .planning-principles-grid { grid-template-columns: 1fr !important; }
     .format-roles-grid { grid-template-columns: 1fr !important; }
+    .story-dots { display: none !important; }
+    .story-scroll-row { overflow-x: auto !important; -webkit-overflow-scrolling: touch !important; padding-bottom: 8px; }
+    .story-frame { flex: 0 0 150px !important; }
   }
 </style>
 </helmet>
@@ -726,9 +729,9 @@
     <p style="font-family:'Spectral'; font-size:16px; line-height:1.6; color:#4a2730; max-width:56ch; margin:16px 0 0;">Карусель — це одна історія, розділена на кілька послідовних кроків. Кожен слайд існує лише тому, що наближає читача до наступного.</p>
 
     <div style="margin-top:clamp(36px,4.5vw,48px); position:relative; border-top:2px solid #620013;">
-      <div style="position:absolute; top:-4px; left:0; right:0; display:flex; justify-content:space-between; pointer-events:none;"><span style="width:7px; height:7px; border-radius:50%; background:#620013;"></span><span style="width:7px; height:7px; border-radius:50%; background:#620013;"></span><span style="width:7px; height:7px; border-radius:50%; background:#620013;"></span><span style="width:7px; height:7px; border-radius:50%; background:#620013;"></span><span style="width:7px; height:7px; border-radius:50%; background:#620013;"></span></div>
-      <div style="display:flex; align-items:stretch; gap:8px; margin-top:14px;">
-        <div style="flex:1; min-width:0;">
+      <div class="story-dots" style="position:absolute; top:-4px; left:0; right:0; display:flex; justify-content:space-between; pointer-events:none;"><span style="width:7px; height:7px; border-radius:50%; background:#620013;"></span><span style="width:7px; height:7px; border-radius:50%; background:#620013;"></span><span style="width:7px; height:7px; border-radius:50%; background:#620013;"></span><span style="width:7px; height:7px; border-radius:50%; background:#620013;"></span><span style="width:7px; height:7px; border-radius:50%; background:#620013;"></span></div>
+      <div class="story-scroll-row" style="display:flex; align-items:stretch; gap:8px; margin-top:14px;">
+        <div class="story-frame" style="flex:1; min-width:0;">
           <span style="font-family:ui-monospace,monospace; font-weight:700; font-size:15px; color:#620013;">01</span>
           <div style="aspect-ratio:4/5; border:1px solid rgba(98,0,19,0.35); background:#f6efe1; padding:16px; display:flex; flex-direction:column; gap:8px; margin-top:6px;">
             <div style="flex:1; background:rgba(98,0,19,0.16);"></div>
@@ -738,7 +741,7 @@
           </div>
         </div>
         <span style="align-self: center; font-family: ui-monospace,monospace; font-size: 30px; font-weight: 500; color: #620013; flex-shrink: 0">→</span>
-        <div style="flex:1; min-width:0;">
+        <div class="story-frame" style="flex:1; min-width:0;">
           <span style="font-family:ui-monospace,monospace; font-weight:700; font-size:15px; color:#620013;">02</span>
           <div style="aspect-ratio:4/5; border:1px solid rgba(98,0,19,0.35); background:#f6efe1; padding:16px; display:flex; flex-direction:column; gap:8px; margin-top:6px;">
             <div style="flex:1; border:1px dashed rgba(98,0,19,0.3); display:flex; align-items:center; justify-content:center;"><span style="font-family:'Onest'; font-weight:700; font-size:28px; color:#620013;">?</span></div>
@@ -748,7 +751,7 @@
           </div>
         </div>
         <span style="align-self: center; font-family: ui-monospace,monospace; font-size: 30px; font-weight: 500; color: #620013; flex-shrink: 0">→</span>
-        <div style="flex:1; min-width:0;">
+        <div class="story-frame" style="flex:1; min-width:0;">
           <span style="font-family:ui-monospace,monospace; font-weight:700; font-size:15px; color:#620013;">03</span>
           <div style="aspect-ratio:4/5; border:1px solid rgba(98,0,19,0.35); background:#f6efe1; padding:16px; display:flex; flex-direction:column; gap:7px; margin-top:6px;">
             
@@ -757,7 +760,7 @@
           </div>
         </div>
         <span style="align-self: center; font-family: ui-monospace,monospace; font-size: 30px; font-weight: 500; color: #620013; flex-shrink: 0">→</span>
-        <div style="flex:1; min-width:0;">
+        <div class="story-frame" style="flex:1; min-width:0;">
           <span style="font-family:ui-monospace,monospace; font-weight:700; font-size:15px; color:#620013;">04</span>
           <div style="aspect-ratio:4/5; border:1px solid rgba(98,0,19,0.35); background:#f6efe1; padding:16px; display:flex; flex-direction:column; gap:8px; margin-top:6px;">
             <div style="flex:1; display:flex; align-items:flex-end; justify-content:center; gap:5px;"><div style="width:10px; height:35%; background:#620013;"></div><div style="width:10px; height:62%; background:#620013;"></div><div style="width:10px; height:95%; background:#620013;"></div></div>
@@ -767,7 +770,7 @@
           </div>
         </div>
         <span style="align-self: center; font-family: ui-monospace,monospace; font-size: 30px; font-weight: 500; color: #620013; flex-shrink: 0">→</span>
-        <div style="flex:1; min-width:0;">
+        <div class="story-frame" style="flex:1; min-width:0;">
           <span style="font-family:ui-monospace,monospace; font-weight:700; font-size:15px; color:#620013;">05</span>
           <div style="aspect-ratio:4/5; border:1px solid #620013; background:#620013; padding:16px; display:flex; flex-direction:column; gap:8px; margin-top:6px;">
             <div style="flex:1;"></div>
