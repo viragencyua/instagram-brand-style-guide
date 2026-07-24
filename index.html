@@ -59,6 +59,7 @@
     .highlights-note { position: absolute !important; left: 0 !important; top: 100% !important; transform: none !important; margin-left: 0 !important; margin-top: 10px !important; width: 100% !important; justify-content: center !important; text-align: center !important; }
     .highlights-note-line { display: none !important; }
     .highlights-connector { height: 64px !important; }
+    .organize-grid { grid-template-columns: 1fr !important; }
   }
 </style>
 </helmet>
@@ -1392,7 +1393,7 @@
     <h2 style="font-family:'Onest'; font-weight:700; font-size:clamp(26px,3.4vw,38px); line-height:1.15; letter-spacing:-0.01em; margin:16px 0 0; color:#241014; max-width:20ch;">Не зберігайте все. Організовуйте.</h2>
     <p style="font-family:'Spectral'; font-size:16px; line-height:1.6; color:#4a2730; max-width:56ch; margin:16px 0 0;">Highlight — це не папка для зберігання. Це продумана категорія.</p>
 
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: clamp(20px,3vw,32px); margin: clamp(44px,5.5vw,60px) 0 0">
+    <div class="organize-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: clamp(20px,3vw,32px); margin: clamp(44px,5.5vw,60px) 0 0">
       <div style="display:flex; flex-direction:column; gap:10px;">
         <span style="font-family: Onest; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #8a5560; display: flex; align-items: center; gap: 6px"><span style="color:#620013;">✕</span>Неправильно</span>
       <div style="border:1px solid rgba(98,0,19,0.35); padding:clamp(24px,3vw,32px); display:flex; flex-direction:column; gap:16px;">
