@@ -78,6 +78,8 @@
     .color-distribution-legend { flex-direction: column !important; align-items: flex-start !important; gap: 12px !important; }
     .color-consistency-grid { grid-template-columns: 1fr !important; }
     .two-fonts-grid { grid-template-columns: 1fr !important; }
+    .type-scale-scroll { overflow-x: auto !important; -webkit-overflow-scrolling: touch !important; }
+    .type-scale-row { min-width: 760px !important; }
   }
 </style>
 </helmet>
@@ -2971,8 +2973,8 @@
     </div>
     <h2 style="font-family:'Onest'; font-weight:700; font-size:clamp(26px,3.4vw,38px); line-height:1.15; letter-spacing:-0.01em; margin:16px 0 0; color:#241014; max-width:24ch;">Шкала типографіки</h2>
 
-    <div style="margin-top:clamp(40px,5vw,52px);">
-      <div style="display:grid; grid-template-columns:1fr 0.7fr 0.7fr 0.9fr 2.4fr; gap:12px; padding:0 0 10px; border-bottom:1.5px solid #620013;">
+    <div class="type-scale-scroll" style="margin-top:clamp(40px,5vw,52px);">
+      <div class="type-scale-row" style="display:grid; grid-template-columns:1fr 0.7fr 0.7fr 0.9fr 2.4fr; gap:12px; padding:0 0 10px; border-bottom:1.5px solid #620013;">
         <span style="font-family:ui-monospace,monospace; font-size:11px; color:#620013; text-transform:uppercase; letter-spacing:0.05em;">Style</span>
         <span style="font-family:ui-monospace,monospace; font-size:11px; color:#620013; text-transform:uppercase; letter-spacing:0.05em;">Weight</span>
         <span style="font-family:ui-monospace,monospace; font-size:11px; color:#620013; text-transform:uppercase; letter-spacing:0.05em;">Size</span>
@@ -2980,76 +2982,76 @@
         <span style="font-family:ui-monospace,monospace; font-size:11px; color:#620013; text-transform:uppercase; letter-spacing:0.05em;">Live Preview</span>
       </div>
 
-      <div style="display:grid; grid-template-columns:1fr 0.7fr 0.7fr 0.9fr 2.4fr; gap:12px; align-items:center; padding:16px 0; border-bottom:1px solid rgba(98,0,19,0.15);">
+      <div class="type-scale-row" style="display:grid; grid-template-columns:1fr 0.7fr 0.7fr 0.9fr 2.4fr; gap:12px; align-items:center; padding:16px 0; border-bottom:1px solid rgba(98,0,19,0.15);">
         <span style="font-family:'Onest'; font-weight:700; font-size:13px; color:#241014;">Display XL</span>
         <span style="font-family:ui-monospace,monospace; font-size:12px; color:#8a5560;">Semibold</span>
         <span style="font-family:ui-monospace,monospace; font-size:12px; color:#8a5560;">80</span>
         <span style="font-family:ui-monospace,monospace; font-size:12px; color:#8a5560;">90</span>
         <span style="font-family: 'Onest'; font-weight: 600; font-size: 56px; line-height: 1; color: #241014; letter-spacing: -0.02em">Дизайн, який говорить</span>
       </div>
-      <div style="display:grid; grid-template-columns:1fr 0.7fr 0.7fr 0.9fr 2.4fr; gap:12px; align-items:center; padding:16px 0; border-bottom:1px solid rgba(98,0,19,0.15);">
+      <div class="type-scale-row" style="display:grid; grid-template-columns:1fr 0.7fr 0.7fr 0.9fr 2.4fr; gap:12px; align-items:center; padding:16px 0; border-bottom:1px solid rgba(98,0,19,0.15);">
         <span style="font-family:'Onest'; font-weight:700; font-size:13px; color:#241014;">Display L</span>
         <span style="font-family:ui-monospace,monospace; font-size:12px; color:#8a5560;">Semibold</span>
         <span style="font-family:ui-monospace,monospace; font-size:12px; color:#8a5560;">70</span>
         <span style="font-family:ui-monospace,monospace; font-size:12px; color:#8a5560;">80</span>
         <span style="font-family: 'Onest'; font-weight: 600; font-size: 48px; line-height: 1; color: #241014; letter-spacing: -0.02em">Сила простих рішень</span>
       </div>
-      <div style="display:grid; grid-template-columns:1fr 0.7fr 0.7fr 0.9fr 2.4fr; gap:12px; align-items:center; padding:16px 0; border-bottom:1px solid rgba(98,0,19,0.15);">
+      <div class="type-scale-row" style="display:grid; grid-template-columns:1fr 0.7fr 0.7fr 0.9fr 2.4fr; gap:12px; align-items:center; padding:16px 0; border-bottom:1px solid rgba(98,0,19,0.15);">
         <span style="font-family:'Onest'; font-weight:700; font-size:13px; color:#241014;">H1</span>
         <span style="font-family:ui-monospace,monospace; font-size:12px; color:#8a5560;">Semibold</span>
         <span style="font-family:ui-monospace,monospace; font-size:12px; color:#8a5560;">60</span>
         <span style="font-family:ui-monospace,monospace; font-size:12px; color:#8a5560;">68</span>
         <span style="font-family: 'Onest'; font-weight: 600; font-size: 40px; line-height: 1; color: #241014; letter-spacing: -0.01em">Історія одного бренду</span>
       </div>
-      <div style="display:grid; grid-template-columns:1fr 0.7fr 0.7fr 0.9fr 2.4fr; gap:12px; align-items:center; padding:16px 0; border-bottom:1px solid rgba(98,0,19,0.15);">
+      <div class="type-scale-row" style="display:grid; grid-template-columns:1fr 0.7fr 0.7fr 0.9fr 2.4fr; gap:12px; align-items:center; padding:16px 0; border-bottom:1px solid rgba(98,0,19,0.15);">
         <span style="font-family:'Onest'; font-weight:700; font-size:13px; color:#241014;">H2</span>
         <span style="font-family:ui-monospace,monospace; font-size:12px; color:#8a5560;">Medium</span>
         <span style="font-family:ui-monospace,monospace; font-size:12px; color:#8a5560;">52</span>
         <span style="font-family:ui-monospace,monospace; font-size:12px; color:#8a5560;">60</span>
         <span style="font-family:'Onest'; font-weight:500; font-size:34px; line-height:1; color:#241014; letter-spacing:-0.01em;">Три принципи довіри</span>
       </div>
-      <div style="display:grid; grid-template-columns:1fr 0.7fr 0.7fr 0.9fr 2.4fr; gap:12px; align-items:center; padding:16px 0; border-bottom:1px solid rgba(98,0,19,0.15);">
+      <div class="type-scale-row" style="display:grid; grid-template-columns:1fr 0.7fr 0.7fr 0.9fr 2.4fr; gap:12px; align-items:center; padding:16px 0; border-bottom:1px solid rgba(98,0,19,0.15);">
         <span style="font-family:'Onest'; font-weight:700; font-size:13px; color:#241014;">H3</span>
         <span style="font-family:ui-monospace,monospace; font-size:12px; color:#8a5560;">Medium</span>
         <span style="font-family:ui-monospace,monospace; font-size:12px; color:#8a5560;">44</span>
         <span style="font-family:ui-monospace,monospace; font-size:12px; color:#8a5560;">52</span>
         <span style="font-family:'Onest'; font-weight:500; font-size:29px; line-height:1.05; color:#241014;">Що ми зробили цього кварталу</span>
       </div>
-      <div style="display:grid; grid-template-columns:1fr 0.7fr 0.7fr 0.9fr 2.4fr; gap:12px; align-items:center; padding:16px 0; border-bottom:1px solid rgba(98,0,19,0.15);">
+      <div class="type-scale-row" style="display:grid; grid-template-columns:1fr 0.7fr 0.7fr 0.9fr 2.4fr; gap:12px; align-items:center; padding:16px 0; border-bottom:1px solid rgba(98,0,19,0.15);">
         <span style="font-family:'Onest'; font-weight:700; font-size:13px; color:#241014;">Body XL</span>
         <span style="font-family:ui-monospace,monospace; font-size:12px; color:#8a5560;">Regular</span>
         <span style="font-family:ui-monospace,monospace; font-size:12px; color:#8a5560;">40</span>
         <span style="font-family:ui-monospace,monospace; font-size:12px; color:#8a5560;">54</span>
         <span style="font-family:'Onest'; font-weight:400; font-size:20px; line-height:1.4; color:#241014;">Прозорість — це не слово, а щоденна практика.</span>
-      </div><div style="display:grid; grid-template-columns:1fr 0.7fr 0.7fr 0.9fr 2.4fr; gap:12px; align-items:center; padding:16px 0; border-bottom:1px solid rgba(98,0,19,0.15);">
+      </div><div class="type-scale-row" style="display:grid; grid-template-columns:1fr 0.7fr 0.7fr 0.9fr 2.4fr; gap:12px; align-items:center; padding:16px 0; border-bottom:1px solid rgba(98,0,19,0.15);">
         <span style="font-family:'Onest'; font-weight:700; font-size:13px; color:#241014;">Body L</span>
         <span style="font-family:ui-monospace,monospace; font-size:12px; color:#8a5560;">Regular</span>
         <span style="font-family:ui-monospace,monospace; font-size:12px; color:#8a5560;">30</span>
         <span style="font-family:ui-monospace,monospace; font-size:12px; color:#8a5560;">42</span>
         <span style="font-family:'Onest'; font-weight:400; font-size:20px; line-height:1.4; color:#241014;">Прозорість — це не слово, а щоденна практика.</span>
       </div>
-      <div style="display:grid; grid-template-columns:1fr 0.7fr 0.7fr 0.9fr 2.4fr; gap:12px; align-items:center; padding:16px 0; border-bottom:1px solid rgba(98,0,19,0.15);">
+      <div class="type-scale-row" style="display:grid; grid-template-columns:1fr 0.7fr 0.7fr 0.9fr 2.4fr; gap:12px; align-items:center; padding:16px 0; border-bottom:1px solid rgba(98,0,19,0.15);">
         <span style="font-family:'Onest'; font-weight:700; font-size:13px; color:#241014;">Body M</span>
         <span style="font-family:ui-monospace,monospace; font-size:12px; color:#8a5560;">Regular</span>
         <span style="font-family:ui-monospace,monospace; font-size:12px; color:#8a5560;">24</span>
         <span style="font-family:ui-monospace,monospace; font-size:12px; color:#8a5560;">36</span>
         <span style="font-family:'Onest'; font-weight:400; font-size:18px; line-height:1.4; color:#241014;">Кожен піст будується за одними й тими самими правилами.</span>
       </div>
-      <div style="display:grid; grid-template-columns:1fr 0.7fr 0.7fr 0.9fr 2.4fr; gap:12px; align-items:center; padding:16px 0; border-bottom:1px solid rgba(98,0,19,0.15);">
+      <div class="type-scale-row" style="display:grid; grid-template-columns:1fr 0.7fr 0.7fr 0.9fr 2.4fr; gap:12px; align-items:center; padding:16px 0; border-bottom:1px solid rgba(98,0,19,0.15);">
         <span style="font-family:'Onest'; font-weight:700; font-size:13px; color:#241014;">Body S</span>
         <span style="font-family:ui-monospace,monospace; font-size:12px; color:#8a5560;">Regular</span>
         <span style="font-family:ui-monospace,monospace; font-size:12px; color:#8a5560;">18</span>
         <span style="font-family:ui-monospace,monospace; font-size:12px; color:#8a5560;">30</span>
         <span style="font-family:'Onest'; font-weight:400; font-size:16px; line-height:1.4; color:#241014;">Взаємодія з донорами базується на довірі та відкритості.</span>
       </div>
-      <div style="display:grid; grid-template-columns:1fr 0.7fr 0.7fr 0.9fr 2.4fr; gap:12px; align-items:center; padding:16px 0; border-bottom:1px solid rgba(98,0,19,0.15);">
+      <div class="type-scale-row" style="display:grid; grid-template-columns:1fr 0.7fr 0.7fr 0.9fr 2.4fr; gap:12px; align-items:center; padding:16px 0; border-bottom:1px solid rgba(98,0,19,0.15);">
         <span style="font-family:'Onest'; font-weight:700; font-size:13px; color:#241014;">Caption</span>
         <span style="font-family:ui-monospace,monospace; font-size:12px; color:#8a5560;">Regular</span>
         <span style="font-family:ui-monospace,monospace; font-size:12px; color:#8a5560;">16</span>
         <span style="font-family:ui-monospace,monospace; font-size:12px; color:#8a5560;">28</span>
         <span style="font-family:'Onest'; font-weight:400; font-size:14px; line-height:1.4; color:#4a2730;">Фото: Іван Петренко, 2024</span>
       </div>
-      <div style="display:grid; grid-template-columns:1fr 0.7fr 0.7fr 0.9fr 2.4fr; gap:12px; align-items:center; padding:16px 0;">
+      <div class="type-scale-row" style="display:grid; grid-template-columns:1fr 0.7fr 0.7fr 0.9fr 2.4fr; gap:12px; align-items:center; padding:16px 0;">
         <span style="font-family:'Onest'; font-weight:700; font-size:13px; color:#241014;">Overline</span>
         <span style="font-family:ui-monospace,monospace; font-size:12px; color:#8a5560;">Medium</span>
         <span style="font-family:ui-monospace,monospace; font-size:12px; color:#8a5560;">14</span>
