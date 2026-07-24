@@ -75,6 +75,7 @@
     .logo-size-label { position: absolute !important; left: 50% !important; top: 100% !important; transform: translateX(-50%) !important; width: max-content !important; max-width: 240px !important; margin-top: 16px !important; text-align: center !important; }
     .incorrect-logo-grid { grid-template-columns: repeat(2, 1fr) !important; }
     .brand-color-grid { grid-template-columns: 1fr !important; }
+    .color-distribution-legend { flex-direction: column !important; align-items: flex-start !important; gap: 12px !important; }
   }
 </style>
 </helmet>
@@ -2874,7 +2875,7 @@
         <div style="width:10%; background:#B4CFCC; display:flex; align-items:center; justify-content:center;"><span style="font-family:ui-monospace,monospace; font-size:11px; color:#241014;">10%</span></div>
         <div style="width:5%; background:#000000;"></div>
       </div>
-      <div style="display: flex; justify-content: space-between; margin-top: 20px; gap: 16px; flex-wrap: nowrap; align-items: stretch">
+      <div class="color-distribution-legend" style="display: flex; justify-content: space-between; margin-top: 20px; gap: 16px; flex-wrap: nowrap; align-items: stretch">
         <div style="display:flex; align-items:center; gap:8px;"><div style="width: 12px; height: 12px; border: 1px solid rgba(98,0,19,0.2); background-color: #620813"></div><span style="font-family:'Onest'; font-size:12px; color:#241014;">Burgundy&nbsp;— фон, більшість композиції</span></div>
         <div style="display:flex; align-items:center; gap:8px;"><div style="width: 12px; height: 12px; background-color: #FFF4DD; border-width: 1px; border-style: solid; border-color: #B8B8B8"></div><span style="font-family:'Onest'; font-size:12px; color:#241014;">Ivory — акценти й заголовки</span></div>
         <div style="display:flex; align-items:center; gap:8px;"><div style="width:12px; height:12px; background:#B4CFCC;"></div><span style="font-family:'Onest'; font-size:12px; color:#241014;">Mint — альтернативний фон</span></div>
