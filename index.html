@@ -41,6 +41,11 @@
     .story-flow-scroll { overflow-x: auto !important; -webkit-overflow-scrolling: touch !important; }
     .story-flow-frame { flex: 0 0 190px !important; }
     .story-flow-arrow { display: none !important; }
+    .one-goal-wrap { flex-direction: column !important; align-items: center !important; }
+    .one-goal-arrow { display: none !important; }
+    .four-frames-block { flex: 1 1 100% !important; width: 100% !important; }
+    .four-frames-scroll { overflow-x: auto !important; -webkit-overflow-scrolling: touch !important; flex-wrap: nowrap !important; }
+    .four-frames-item { flex: 0 0 160px !important; }
   }
 </style>
 </helmet>
@@ -1170,7 +1175,7 @@
     <h2 style="font-family:'Onest'; font-weight:700; font-size:clamp(26px,3.4vw,38px); line-height:1.15; letter-spacing:-0.01em; margin:16px 0 0; color:#241014; max-width:22ch;">Одна історія. Одна мета.</h2>
     <p style="font-family:'Spectral'; font-size:16px; line-height:1.6; color:#4a2730; max-width:56ch; margin:16px 0 0;">Коли один кадр передає кілька повідомлень одночасно — жодне з них не запам'ятовується.</p>
 
-    <div style="display: flex; align-items: center; flex-wrap: wrap; gap: clamp(24px,3vw,36px); margin-top: clamp(36px,4.5vw,48px)">
+    <div class="one-goal-wrap" style="display: flex; align-items: center; flex-wrap: wrap; gap: clamp(24px,3vw,36px); margin-top: clamp(36px,4.5vw,48px)">
       <div>
         <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;"><span style="font-family:'Onest'; font-weight:700; font-size:16px; color:#620013;">✕</span><span style="font-family: Onest; font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; color: #620013">КАДР НАМАГАЄТЬСЯ СКАЗАТИ ВСЕ</span></div>
         <div style="width: 219px; aspect-ratio: 9/16; border: 2px solid #620013; background: #f6efe1; padding: 14px; display: flex; flex-direction: column; gap: 8px; justify-content: center">
@@ -1185,29 +1190,29 @@
         </div>
         <span style="font-family:'Spectral'; font-size:12.5px; color:#4a2730; display:block; margin-top:12px; max-width:220px;">Забагато повідомлень конкурують за увагу в одному кадрі.</span>
       </div>
-      <span style="align-self:center; font-family:ui-monospace,monospace; font-size:20px; color:#8a5560;">→</span>
-      <div style="flex:1; min-width:0;">
+      <span class="one-goal-arrow" style="align-self:center; font-family:ui-monospace,monospace; font-size:20px; color:#8a5560;">→</span>
+      <div class="four-frames-block" style="flex:1; min-width:0;">
         <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;"><span style="font-family:'Onest'; font-weight:700; font-size:16px; color:#1A7A3C;">✓</span><span style="font-family: Onest; font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; color: #1A7A3C">Той самий зміст — чотири кадри</span></div>
-        <div style="display:flex; gap:10px; align-items:stretch; flex-wrap:wrap;">
-          <div style="flex: 1; min-width: 145px; max-width: 185px; aspect-ratio: 9/16; border: 1px solid #620013; background: #f6efe1; position: relative; display: flex; flex-direction: column; overflow: hidden; justify-content: center; align-items: center; padding-top: 12px; padding-right: 12px; padding-bottom: 12px; padding-left: 12px; gap: 12px">
+        <div class="four-frames-scroll" style="display:flex; gap:10px; align-items:stretch; flex-wrap:wrap;">
+          <div class="four-frames-item" style="flex: 1; min-width: 145px; max-width: 185px; aspect-ratio: 9/16; border: 1px solid #620013; background: #f6efe1; position: relative; display: flex; flex-direction: column; overflow: hidden; justify-content: center; align-items: center; padding-top: 12px; padding-right: 12px; padding-bottom: 12px; padding-left: 12px; gap: 12px">
             
             <span style="font-family: 'Onest'; font-weight: 600; font-size: 14px; line-height: 1.2; color: #620813">Як вести бухгалтерію в неприбутковій організації</span><span style="color: #620813; font-family: 'Onest'; font-weight: 600; font-size: 10px; padding: 3px 7px; align-self: flex-start; width: 100%; height: 21px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px">Практичний гайд</span>
             <span style="position: absolute; top: 8px; left: 10px; font-family: Onest; font-size: 9px; letter-spacing: 0.04em; text-transform: uppercase; color: #620013">ЗАЦІКАВИТИ</span>
           </div>
           <span style="align-self:center; font-family:ui-monospace,monospace; font-size:18px; color:#8a5560; flex-shrink:0;">→</span>
-          <div style="flex:1; min-width:145px; max-width:185px; aspect-ratio:9/16; border:1px solid #620013; background:#f6efe1; padding:18px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px; position:relative;">
+          <div class="four-frames-item" style="flex:1; min-width:145px; max-width:185px; aspect-ratio:9/16; border:1px solid #620013; background:#f6efe1; padding:18px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px; position:relative;">
             <span style="position: absolute; top: 8px; left: 10px; font-family: Onest; font-size: 9px; letter-spacing: 0.04em; text-transform: uppercase; color: #620013">Пояснити</span>
             <span style="font-family:'Onest'; font-weight:700; font-size:38px; line-height:1; color:#620013;">63%</span>
             <span style="font-family:'Spectral'; font-size:11px; line-height:1.35; color:#4a2730; text-align:center;">організацій припускаються помилок у звітності</span>
           </div>
           <span style="align-self:center; font-family:ui-monospace,monospace; font-size:18px; color:#8a5560; flex-shrink:0;">→</span>
-          <div style="flex: 1; min-width: 145px; max-width: 185px; aspect-ratio: 9/16; border: 1px solid #620013; background: #f6efe1; padding: 18px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; position: relative; padding-top: 12px; padding-right: 12px; padding-bottom: 12px; padding-left: 12px">
+          <div class="four-frames-item" style="flex: 1; min-width: 145px; max-width: 185px; aspect-ratio: 9/16; border: 1px solid #620013; background: #f6efe1; padding: 18px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; position: relative; padding-top: 12px; padding-right: 12px; padding-bottom: 12px; padding-left: 12px">
             <span style="position: absolute; top: 8px; left: 10px; font-family: Onest; font-size: 9px; letter-spacing: 0.04em; text-transform: uppercase; color: #620013">Залучити</span>
             <span style="font-family: 'Onest'; font-weight: 600; font-size: 12px; color: #241014; text-align: center">Яке питання викликає найбільше складнощів?</span>
             <div style="display: flex; gap: 8px; width: 100%; flex-direction: column"><span style="flex: 1; border: 1px solid #620013; border-radius: 20px; text-align: center; padding: 7px 4px; font-family: 'Onest'; font-size: 10px; color: #620013">Первинні документи</span><span style="flex: 1; border: 1px solid #620013; border-radius: 20px; text-align: center; padding: 7px 4px; font-family: 'Onest'; font-size: 10px; color: #620013">Фінансова звітність</span></div>
           </div>
           <span style="align-self:center; font-family:ui-monospace,monospace; font-size:18px; color:#8a5560; flex-shrink:0;">→</span>
-          <div style="flex:1; min-width:145px; max-width:185px; aspect-ratio:9/16; border:1px solid #620013; background:#620013; padding:18px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px; position:relative;">
+          <div class="four-frames-item" style="flex:1; min-width:145px; max-width:185px; aspect-ratio:9/16; border:1px solid #620013; background:#620013; padding:18px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px; position:relative;">
             <span style="position: absolute; top: 8px; left: 10px; font-family: Onest; font-size: 9px; letter-spacing: 0.04em; text-transform: uppercase; color: rgba(255,244,221,0.65)">Спонукати</span>
             <span style="font-family:'Onest'; font-weight:700; font-size:16px; color:#FFF4DD; text-align:center;">Як уникнути цих помилок?</span>
             <span style="font-family: Onest; font-size: 10px; color: rgba(255,244,221,0.6)">Читати гайд →</span>
