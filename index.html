@@ -85,6 +85,9 @@
     .dont-headline { font-size: 20px !important; }
     .dont-badge { display: none !important; }
     .typography-review-grid { grid-template-columns: 1fr !important; justify-items: stretch !important; }
+    .brand-system-scroll { display: flex !important; flex-wrap: nowrap !important; overflow-x: auto !important; -webkit-overflow-scrolling: touch !important; padding-bottom: 8px; }
+    .brand-system-item { flex: 0 0 240px !important; }
+    .brand-system-caption { flex: 0 0 240px !important; }
   }
 </style>
 </helmet>
@@ -3305,22 +3308,22 @@
       <span style="font-family:'Onest'; font-weight:700; font-size:14px; color:#1a7a3c;">✓ ПОСЛІДОВНІСТЬ</span>
       <div style="flex:1; height:1px; background:rgba(98,0,19,0.15);"></div>
     </div>
-    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:2px; margin-top:14px;">
-      <div style="aspect-ratio:4/5; position:relative; overflow:hidden;">
+    <div class="brand-system-scroll" style="display:grid; grid-template-columns:repeat(3,1fr); gap:2px; margin-top:14px;">
+      <div class="brand-system-item" style="aspect-ratio:4/5; position:relative; overflow:hidden;">
         <img src="./meeting-01-mrw91wja-pjua.png" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover;">
         <img src="./logo-light_without-text-mr6d9djk.svg" alt="Viragency" style="position:absolute; top:13px; left:18px; height:28px; width:64px; opacity:0.92;">
         <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(20,8,10,0.85) 0%, rgba(20,8,10,0.1) 42%, rgba(20,8,10,0) 60%);"></div>
         <span style="position:absolute; left:22px; right:18px; bottom:67px; font-family:'Onest'; font-weight:700; font-size:26px; color:#FFF4DD; line-height:1.3;">Нова школа<br>відкрила двері</span>
         <span style="position:absolute; left:22px; bottom:30px; font-family:'Onest'; font-weight:600; font-size:12px; color:#FFF4DD;">Читати →</span>
       </div>
-      <div style="aspect-ratio:4/5; position:relative; overflow:hidden;">
+      <div class="brand-system-item" style="aspect-ratio:4/5; position:relative; overflow:hidden;">
         <img src="./people18-mrw8mkzx-b4tu.png" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover;">
         <img src="./logo-light_without-text-mr6d9djk.svg" alt="Viragency" style="position:absolute; top:12px; left:18px; height:28px; width:64px; opacity:0.92;">
         <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(20,8,10,0.85) 0%, rgba(20,8,10,0.1) 42%, rgba(20,8,10,0) 60%);"></div>
         <span style="position:absolute; left:22px; right:48px; bottom:71px; font-family:'Onest'; font-weight:600; font-size:22px; color:#FFF4DD; line-height:1.3;">Перед подачею грантової заявки перевірте ці чотири<br>речі</span>
         <span style="position:absolute; left:22px; bottom:30px; font-family:'Onest'; font-weight:600; font-size:12px; color:#FFF4DD;">Дивитись далі →</span>
       </div>
-      <div style="aspect-ratio:4/5; position:relative; overflow:hidden;">
+      <div class="brand-system-item" style="aspect-ratio:4/5; position:relative; overflow:hidden;">
         <img src="./people-07-mrw8hv4f-4gp2.png" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover;">
         <img src="./logo-light_without-text-mr6d9djk.svg" alt="Viragency" style="position:absolute; top:12px; left:18px; height:28px; width:64px; opacity:0.92;">
         <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(20,8,10,0.85) 0%, rgba(20,8,10,0.1) 42%, rgba(20,8,10,0) 60%);"></div>
@@ -3332,27 +3335,27 @@
       <span style="font-family:'Onest'; font-weight:700; font-size:14px; color:#a3202f;">✕ ХАОС</span>
       <div style="flex:1; height:1px; background:rgba(98,0,19,0.15);"></div>
     </div>
-    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:2px; margin-top:14px;">
-      <div style="aspect-ratio:4/5; position:relative; overflow:hidden; background:#241014;">
+    <div class="brand-system-scroll" style="display:grid; grid-template-columns:repeat(3,1fr); gap:2px; margin-top:14px;">
+      <div class="brand-system-item" style="aspect-ratio:4/5; position:relative; overflow:hidden; background:#241014;">
         <img src="./meeting-01-mrw92y5z-ikea.png" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; filter:saturate(1.9) contrast(1.2);">
         <img src="./logo-light_without-text-mr6d9djk.svg" alt="Viragency" style="position:absolute; top:30px; left:50%; transform:translate(-50%,-50%); height:34px; width:100px;">
         <span style="position:absolute; left:16px; top:250px; font-family:'Spectral'; font-weight:700; font-style:italic; font-size:26px; color:#5ad1ff; line-height:1.2;">Нова школа відкрила двері!</span>
       </div>
-      <div style="aspect-ratio:4/5; position:relative; overflow:hidden; background:#0e2f22;">
+      <div class="brand-system-item" style="aspect-ratio:4/5; position:relative; overflow:hidden; background:#0e2f22;">
         <img src="./people18-mrw97sez-200b.png" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; filter:sepia(0.4) saturate(1.3);">
         <img src="./logo-light_without-text-mr6d9djk.svg" alt="Viragency" style="position:absolute; bottom:16px; right:16px; height:20px; width:60px; opacity:0.9;">
         <div style="position:absolute; left:0; right:0; top:0; padding:16px 16px 16px 41px; background:rgba(0,80,50,0.55);"><span style="font-family:ui-monospace,monospace; font-weight:700; font-size:13px; color:#d9ffd9;">Перед подачею грантової заявки перевірте ці чотири речі</span></div>
       </div>
-      <div style="aspect-ratio:4/5; position:relative; overflow:hidden; background:#ffd400;">
+      <div class="brand-system-item" style="aspect-ratio:4/5; position:relative; overflow:hidden; background:#ffd400;">
         <img src="./people-07-mrw98x98-3z3l.png" alt="" style="position:absolute; inset:8px; width:calc(100% - 16px); height:calc(100% - 16px); object-fit:cover; filter:saturate(2.2);">
         <img src="./logo-light_without-text-mr6d9djk.svg" alt="Viragency" style="position:absolute; top:24px; left:24px; height:30px; width:88px;">
         <span style="position:absolute; left:24px; bottom:24px; font-family:'Onest'; font-weight:900; font-size:20px; color:#FFFFFF;">Партнери підписали угоду</span>
       </div>
     </div>
-    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:2px; margin-top:8px;">
-      <span style="font-family:'Onest'; font-size:12px; color:#8a5560; text-align:center;">лого по центру, кислотні кольори</span>
-      <span style="font-family:'Onest'; font-size:12px; color:#8a5560; text-align:center;">лого знизу, монотипографіка, зелений оверлей</span>
-      <span style="font-family:'Onest'; font-size:12px; color:#8a5560; text-align:center;">суцільна жовта рамка, крик замість заголовка</span>
+    <div class="brand-system-scroll" style="display:grid; grid-template-columns:repeat(3,1fr); gap:2px; margin-top:8px;">
+      <span class="brand-system-caption" style="font-family:'Onest'; font-size:12px; color:#8a5560; text-align:center;">лого по центру, кислотні кольори</span>
+      <span class="brand-system-caption" style="font-family:'Onest'; font-size:12px; color:#8a5560; text-align:center;">лого знизу, монотипографіка, зелений оверлей</span>
+      <span class="brand-system-caption" style="font-family:'Onest'; font-size:12px; color:#8a5560; text-align:center;">суцільна жовта рамка, крик замість заголовка</span>
     </div>
 
     <p style="font-family:'Onest'; font-weight:700; font-size:clamp(19px,2.2vw,22px); color:#241014; max-width:50ch; margin:clamp(48px,5.5vw,64px) auto 0; text-align:center; letter-spacing:-0.01em;">Послідовність важливіша за індивідуальну креативність кожного посту.</p>
