@@ -16,6 +16,9 @@
   html, body { margin: 0; padding: 0; }
   body { background: #241014; }
   ::selection { background: #620013; color: #FFF4DD; }
+  @media (max-width: 700px) {
+    .contents-grid { grid-template-columns: 1fr !important; row-gap: 32px !important; }
+  }
 </style>
 </helmet>
 
@@ -44,7 +47,7 @@
   <!-- CONTENTS                                                       -->
   <!-- ============================================================ -->
   <section data-screen-label="Contents" style="min-height:80vh; display:flex; flex-direction:column; justify-content:center; padding:clamp(48px,7vw,88px) clamp(20px,6vw,80px);">
-    <div style="display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.4fr); gap:clamp(40px,6vw,80px); align-items:start;">
+    <div class="contents-grid" style="display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.4fr); gap:clamp(40px,6vw,80px); align-items:start;">
       <div>
         <div style="font-family: Onest; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: #8a5560; margin-bottom: 18px">Зміст</div>
         <h2 style="font-family:'Onest'; font-weight:700; font-size:clamp(34px,5vw,58px); line-height:1.02; letter-spacing:-0.025em; margin:0;">Сімнадцять розділів, один стандарт.</h2>
