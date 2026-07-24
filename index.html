@@ -21,6 +21,8 @@
     .archetype-grid { grid-template-columns: 1fr !important; row-gap: 36px !important; }
     .sequence-row { flex-direction: column !important; align-items: flex-start !important; gap: 20px !important; }
     .sequence-sep { display: none !important; }
+    .slide-grid { grid-template-columns: 1fr !important; }
+    .slide-media { width: 100% !important; order: -1; }
   }
 </style>
 </helmet>
@@ -228,8 +230,8 @@
       <span style="font-family:'Spectral'; font-style:italic; font-size:clamp(15px,1.7vw,18px); color:#8a5560;">слайд 1 · обкладинка</span>
       <span style="margin-left:auto; font-family:ui-monospace,monospace; font-size:10.5px; letter-spacing:0.16em; text-transform:uppercase; color:#b09aa1;">1 / 3</span>
     </div>
-    <div style="display:grid; grid-template-columns:480px 1fr; gap:clamp(40px,6vw,72px); align-items:center;">
-      <div style="width:480px; aspect-ratio:4/5; position:relative; overflow:hidden; box-shadow:0 30px 70px -34px rgba(36,16,20,0.6); flex-shrink:0;">
+    <div class="slide-grid" style="display:grid; grid-template-columns:480px 1fr; gap:clamp(40px,6vw,72px); align-items:center;">
+      <div class="slide-media" style="width:480px; aspect-ratio:4/5; position:relative; overflow:hidden; box-shadow:0 30px 70px -34px rgba(36,16,20,0.6); flex-shrink:0;">
         <img src="./people-08-mr7xzrfm.png" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center;">
         
         <img src="./logo-light_without-text-mr6d9djk.svg" alt="Viragency" style="position:absolute; top:24px; left:32px; height:28px; width:84px; opacity:0.92;">
@@ -258,13 +260,13 @@
       <span style="font-family:'Spectral'; font-style:italic; font-size:clamp(15px,1.7vw,18px); color:#8a5560;">слайд 2 · чому так стається</span>
       <span style="margin-left:auto; font-family:ui-monospace,monospace; font-size:10.5px; letter-spacing:0.16em; text-transform:uppercase; color:#b09aa1;">2 / 3</span>
     </div>
-    <div style="display:grid; grid-template-columns:1fr 480px; gap:clamp(40px,6vw,72px); align-items:center;">
+    <div class="slide-grid" style="display:grid; grid-template-columns:1fr 480px; gap:clamp(40px,6vw,72px); align-items:center;">
       <div style="display:flex; flex-direction:column; gap:clamp(24px,4vw,32px); max-width:34ch; padding-top:4px;">
         <div><div style="font-family: Onest; font-size: 9.5px; letter-spacing: 0.14em; text-transform: uppercase; color: #c0adb4; margin-bottom: 8px">Мета слайда</div><p style="font-size:15.5px; line-height:1.6; color:#241014; margin:0;">Пояснити, що проблема виникає не через людей, а через відсутність системи.</p></div>
         <div><div style="font-family: Onest; font-size: 9.5px; letter-spacing: 0.14em; text-transform: uppercase; color: #c0adb4; margin-bottom: 8px">Головна думка</div><p style="font-size:15.5px; line-height:1.6; color:#241014; margin:0;">Залежність виникає тоді, коли знання, процеси та відповідальність не розподілені між командою.</p></div>
         <div><div style="font-family: Onest; font-size: 9.5px; letter-spacing: 0.14em; text-transform: uppercase; color: #c0adb4; margin-bottom: 8px">Візуальний принцип</div><p style="font-size:15.5px; line-height:1.6; color:#241014; margin:0;">Короткі повідомлення допомагають швидко зрозуміти головну думку без перевантаження текстом.</p></div>
       </div>
-      <div style="width:480px; aspect-ratio:4/5; position:relative; overflow:hidden; box-shadow:0 30px 70px -34px rgba(36,16,20,0.6); flex-shrink:0;">
+      <div class="slide-media" style="width:480px; aspect-ratio:4/5; position:relative; overflow:hidden; box-shadow:0 30px 70px -34px rgba(36,16,20,0.6); flex-shrink:0;">
         <img src="./people-11-mrc29zqd.png" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center">
         <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(20,8,10,0.42) 0%, rgba(20,8,10,0) 18%)"></div>
         <div style="position: absolute; inset: 0; background: linear-gradient(0deg, #0F0C0833, rgba(20,8,10,0.32) 30%, rgba(20,8,10,0) 55%)"></div>
@@ -293,8 +295,8 @@
       <span style="font-family:'Spectral'; font-style:italic; font-size:clamp(15px,1.7vw,18px); color:#8a5560;">слайд 3 · рішення</span>
       <span style="margin-left:auto; font-family:ui-monospace,monospace; font-size:10.5px; letter-spacing:0.16em; text-transform:uppercase; color:#b09aa1;">3 / 3</span>
     </div>
-    <div style="display:grid; grid-template-columns:480px 1fr; gap:clamp(40px,6vw,72px); align-items:center;">
-      <div style="width:480px; aspect-ratio:4/5; position:relative; overflow:hidden; box-shadow:0 30px 70px -34px rgba(36,16,20,0.6); flex-shrink:0;">
+    <div class="slide-grid" style="display:grid; grid-template-columns:480px 1fr; gap:clamp(40px,6vw,72px); align-items:center;">
+      <div class="slide-media" style="width:480px; aspect-ratio:4/5; position:relative; overflow:hidden; box-shadow:0 30px 70px -34px rgba(36,16,20,0.6); flex-shrink:0;">
         <img src="./people-10-mr7zuy2q.png" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center;">
         
         
@@ -324,13 +326,13 @@
       <span style="font-family:'Spectral'; font-style:italic; font-size:clamp(15px,1.7vw,18px); color:#8a5560;">1 · нагадування</span>
       <span style="margin-left:auto; font-family:ui-monospace,monospace; font-size:10.5px; letter-spacing:0.16em; text-transform:uppercase; color:#b09aa1;">1 / 2</span>
     </div>
-    <div style="display:grid; grid-template-columns:1fr 300px; gap:clamp(40px,6vw,72px); align-items:center;">
+    <div class="slide-grid" style="display:grid; grid-template-columns:1fr 300px; gap:clamp(40px,6vw,72px); align-items:center;">
       <div style="display:flex; flex-direction:column; gap:clamp(24px,4vw,32px); max-width:34ch; padding-top:4px;">
         <div><div style="font-family: Onest; font-size: 9.5px; letter-spacing: 0.14em; text-transform: uppercase; color: #c0adb4; margin-bottom: 8px">Роль у серії</div><p style="font-size:15.5px; line-height:1.6; color:#241014; margin:0;">Повернути увагу до теми та підтримати інтерес після каруселі.</p></div>
         <div><div style="font-family: Onest; font-size: 9.5px; letter-spacing: 0.14em; text-transform: uppercase; color: #c0adb4; margin-bottom: 8px">Що зчитує читач</div><p style="font-size:15.5px; line-height:1.6; color:#241014; margin:0;">Питання допомагає приміряти ситуацію на себе й викликає бажання перевірити власну організацію.</p></div>
         <div><div style="font-family: Onest; font-size: 9.5px; letter-spacing: 0.14em; text-transform: uppercase; color: #c0adb4; margin-bottom: 8px">UX-рішення</div><p style="font-size:15.5px; line-height:1.6; color:#241014; margin:0;">Одна проста дія — і користувач уже взаємодіє з брендом.</p></div>
       </div>
-      <div style="width: 300px; aspect-ratio: 9/16; position: relative; overflow: hidden; box-shadow: 0 30px 70px -34px rgba(36,16,20,0.6); background: url(&quot;./architecture-07-mrc1v97r.png&quot;) center / cover no-repeat; flex-shrink: 0">
+      <div class="slide-media" style="width: 300px; aspect-ratio: 9/16; position: relative; overflow: hidden; box-shadow: 0 30px 70px -34px rgba(36,16,20,0.6); background: url(&quot;./architecture-07-mrc1v97r.png&quot;) center / cover no-repeat; flex-shrink: 0">
         <img src="./logo-light_without-text-mr6dcfa4.svg" alt="Viragency" style="position:absolute; top:40px; left:24px; height:24px; width:72px; opacity:0.92;">
         <div style="position:absolute; inset:0; padding:88px 24px 64px; display:flex; flex-direction:column; justify-content:center; gap:clamp(32px,10%,48px);">
           
@@ -356,8 +358,8 @@
       <span style="font-family:'Spectral'; font-style:italic; font-size:clamp(15px,1.7vw,18px); color:#8a5560;">2 · заклик</span>
       <span style="margin-left:auto; font-family:ui-monospace,monospace; font-size:10.5px; letter-spacing:0.16em; text-transform:uppercase; color:#b09aa1;">2 / 2</span>
     </div>
-    <div style="display:grid; grid-template-columns:300px 1fr; gap:clamp(40px,6vw,72px); align-items:center;">
-      <div style="width:300px; aspect-ratio:9/16; position:relative; overflow:hidden; box-shadow:0 30px 70px -34px rgba(36,16,20,0.6); flex-shrink:0;">
+    <div class="slide-grid" style="display:grid; grid-template-columns:300px 1fr; gap:clamp(40px,6vw,72px); align-items:center;">
+      <div class="slide-media" style="width:300px; aspect-ratio:9/16; position:relative; overflow:hidden; box-shadow:0 30px 70px -34px rgba(36,16,20,0.6); flex-shrink:0;">
         <img src="./workspace-07-mrc22r28.png" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center;">
         <div style="position:absolute; inset:0; background:linear-gradient(to bottom, rgba(20,8,10,0.5) 0%, rgba(20,8,10,0) 20%, rgba(20,8,10,0.25) 44%, rgba(20,8,10,0.96) 100%);"></div>
         <img src="./logo-light_without-text-mr6dd0v0.svg" alt="Viragency" style="position:absolute; top:40px; left:24px; height:24px; width:72px; opacity:0.92;">
