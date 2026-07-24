@@ -19,6 +19,8 @@
   @media (max-width: 700px) {
     .contents-grid { grid-template-columns: 1fr !important; row-gap: 32px !important; }
     .archetype-grid { grid-template-columns: 1fr !important; row-gap: 36px !important; }
+    .sequence-row { flex-direction: column !important; align-items: flex-start !important; gap: 20px !important; }
+    .sequence-sep { display: none !important; }
   }
 </style>
 </helmet>
@@ -202,15 +204,15 @@
     </div>
     <div style="margin-top: clamp(32px,5vw,56px); border-top: 1px solid rgba(98,0,19,0.14); padding-top: clamp(28px,3.5vw,40px)">
       <div style="font-family: Onest; font-size: 9.5px; letter-spacing: 0.14em; text-transform: uppercase; color: #c0adb4; margin-bottom: clamp(24px,3vw,32px)">Логіка послідовності</div>
-      <div style="display:flex; flex-wrap:wrap; align-items:flex-start; gap:clamp(16px,2vw,28px);">
+      <div class="sequence-row" style="display:flex; flex-wrap:wrap; align-items:flex-start; gap:clamp(16px,2vw,28px);">
         <div style="display:flex; flex-direction:column; gap:6px; min-width:104px;"><span style="font-family:'Onest'; font-weight:700; font-size:clamp(17px,1.9vw,21px); letter-spacing:-0.01em; color:#620013;">Проблема</span><span style="font-family:'Spectral'; font-style:italic; font-size:14px; color:#4a2730;">допомагаємо впізнати ситуацію</span></div>
-        <span style="width:30px; height:1px; background:rgba(98,0,19,0.22); align-self:flex-start; margin-top:15px;"></span>
+        <span class="sequence-sep" style="width:30px; height:1px; background:rgba(98,0,19,0.22); align-self:flex-start; margin-top:15px;"></span>
         <div style="display:flex; flex-direction:column; gap:6px; min-width:104px;"><span style="font-family:'Onest'; font-weight:700; font-size:clamp(17px,1.9vw,21px); letter-spacing:-0.01em; color:#620013;">Спостереження</span><span style="font-family:'Spectral'; font-style:italic; font-size:14px; color:#4a2730;">пояснюємо причину</span></div>
-        <span style="width:30px; height:1px; background:rgba(98,0,19,0.22); align-self:flex-start; margin-top:15px;"></span>
+        <span class="sequence-sep" style="width:30px; height:1px; background:rgba(98,0,19,0.22); align-self:flex-start; margin-top:15px;"></span>
         <div style="display:flex; flex-direction:column; gap:6px; min-width:104px;"><span style="font-family:'Onest'; font-weight:700; font-size:clamp(17px,1.9vw,21px); letter-spacing:-0.01em; color:#620013;">Метод</span><span style="font-family:'Spectral'; font-style:italic; font-size:14px; color:#4a2730;">пропонуємо рішення</span></div>
-        <span style="width:30px; height:1px; background:rgba(98,0,19,0.22); align-self:flex-start; margin-top:15px;"></span>
+        <span class="sequence-sep" style="width:30px; height:1px; background:rgba(98,0,19,0.22); align-self:flex-start; margin-top:15px;"></span>
         <div style="display:flex; flex-direction:column; gap:6px; min-width:104px;"><span style="font-family:'Onest'; font-weight:700; font-size:clamp(17px,1.9vw,21px); letter-spacing:-0.01em; color:#620013;">FAQ</span><span style="font-family:'Spectral'; font-style:italic; font-size:14px; color:#4a2730;">знімаємо заперечення</span></div>
-        <span style="width:30px; height:1px; background:rgba(98,0,19,0.22); align-self:flex-start; margin-top:15px;"></span>
+        <span class="sequence-sep" style="width:30px; height:1px; background:rgba(98,0,19,0.22); align-self:flex-start; margin-top:15px;"></span>
         <div style="display:flex; flex-direction:column; gap:6px; min-width:104px;"><span style="font-family:'Onest'; font-weight:700; font-size:clamp(17px,1.9vw,21px); letter-spacing:-0.01em; color:#620013;">Розмова</span><span style="font-family:'Spectral'; font-style:italic; font-size:14px; color:#4a2730;">запрошуємо до діалогу</span></div>
       </div>
     </div>
