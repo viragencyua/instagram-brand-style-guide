@@ -74,6 +74,7 @@
     .logo-incorrect-grid { grid-template-columns: repeat(2, 1fr) !important; }
     .logo-size-label { position: absolute !important; left: 50% !important; top: 100% !important; transform: translateX(-50%) !important; width: max-content !important; max-width: 240px !important; margin-top: 16px !important; text-align: center !important; }
     .incorrect-logo-grid { grid-template-columns: repeat(2, 1fr) !important; }
+    .brand-color-grid { grid-template-columns: 1fr !important; }
   }
 </style>
 </helmet>
@@ -2824,7 +2825,7 @@
     <h2 style="font-family:'Onest'; font-weight:700; font-size:clamp(26px,3.4vw,38px); line-height:1.15; letter-spacing:-0.01em; margin:16px 0 0; color:#241014; max-width:24ch;">Офіційна палітра бренду</h2>
     <p style="font-family:'Spectral'; font-size:14px; line-height:1.6; color:#8a5560; max-width:60ch; margin:12px 0 0;">Ролі кольорів (Primary / Secondary / Accent). Нижче показано практичне застосування на основі поточного використання.</p>
 
-    <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:clamp(20px,3vw,32px); margin-top:clamp(48px,6vw,64px);">
+    <div class="brand-color-grid" style="display:grid; grid-template-columns:repeat(4,1fr); gap:clamp(20px,3vw,32px); margin-top:clamp(48px,6vw,64px);">
       <div>
         <div style="aspect-ratio:1; background:#620013;"></div>
         <p style="font-family:'Onest'; font-weight:700; font-size:15px; color:#241014; margin:14px 0 0;">Dark Burgundy</p>
