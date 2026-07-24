@@ -46,6 +46,11 @@
     .four-frames-block { flex: 1 1 100% !important; width: 100% !important; }
     .four-frames-scroll { overflow-x: auto !important; -webkit-overflow-scrolling: touch !important; flex-wrap: nowrap !important; }
     .four-frames-item { flex: 0 0 160px !important; }
+    .scan-stories-grid { display: flex !important; flex-direction: column !important; align-items: center !important; gap: 20px !important; }
+    .scan-preview { width: min(300px, 78vw) !important; }
+    .scan-annotation { text-align: center !important; justify-content: center !important; }
+    .scan-annotation span:last-child { font-size: 12px !important; }
+    .scan-annotation-line { display: none !important; }
   }
 </style>
 </helmet>
@@ -1234,9 +1239,9 @@
     <h2 style="font-family:'Onest'; font-weight:700; font-size:clamp(26px,3.4vw,38px); line-height:1.15; letter-spacing:-0.01em; margin:16px 0 0; color:#241014; max-width:26ch;">Спочатку рух погляду, потім межі інтерфейсу</h2>
     <p style="font-family:'Spectral'; font-size:16px; line-height:1.6; color:#4a2730; max-width:56ch; margin:16px 0 0;">Instagram уже зайняв частину екрана своїм інтерфейсом. Контент повинен жити всередині безпечної області, інакше його перекриють системні елементи.</p>
 
-    <div style="display:grid; grid-template-columns:minmax(150px,230px) 360px minmax(150px,230px); grid-template-rows:15fr 70fr 15fr; align-items:stretch; justify-content:center; column-gap:26px; margin:clamp(48px,6vw,68px) auto 0; max-width:900px;">
+    <div class="scan-stories-grid" style="display:grid; grid-template-columns:minmax(150px,230px) 360px minmax(150px,230px); grid-template-rows:15fr 70fr 15fr; align-items:stretch; justify-content:center; column-gap:26px; margin:clamp(48px,6vw,68px) auto 0; max-width:900px;">
       <div style="grid-column:1; grid-row:1;"></div>
-      <div style="grid-column:2; grid-row:1 / span 3; aspect-ratio:9/16; border:1px solid rgba(98,0,19,0.35); display:flex; flex-direction:column;">
+      <div class="scan-preview" style="grid-column:2; grid-row:1 / span 3; aspect-ratio:9/16; border:1px solid rgba(98,0,19,0.35); display:flex; flex-direction:column;">
         <div style="flex: 0 0 15%; display: flex; align-items: center; padding: 0 18px; gap: 8px; background-color: #24101433; position:relative;">
           <div style="width:20px; height:20px; border-radius:50%; border:1.5px solid rgba(255,244,221,0.7); flex-shrink:0;"></div>
           <div style="display:flex; gap:5px; flex:1;"><div style="flex:1; height:2.5px; background:#FFF4DD;"></div><div style="flex:1; height:2.5px; background:rgba(255,244,221,0.35);"></div><div style="flex:1; height:2.5px; background:rgba(255,244,221,0.35);"></div></div>
@@ -1256,18 +1261,18 @@
           <span style="position: absolute; bottom: 5px; right: 10px; font-family: Onest; font-size: 12px; color: #8A5561">≈15%</span>
         </div>
       </div>
-      <div style="grid-column:3; grid-row:1; display:flex; align-items:center; gap:10px;">
-        <div style="width:22px; height:1px; background:#620013; flex-shrink:0;"></div>
+      <div class="scan-annotation" style="grid-column:3; grid-row:1; display:flex; align-items:center; gap:10px;">
+        <div class="scan-annotation-line" style="width:22px; height:1px; background:#620013; flex-shrink:0;"></div>
         <span style="font-family:'Spectral'; font-size:13.5px; line-height:1.4; color:#4a2730;">Тут живе інтерфейс Instagram — аватар, прогрес-бар, кнопка закриття. Не розміщуйте тут важливий контент.</span>
       </div>
-      <div style="grid-column:1; grid-row:2; display:flex; align-items:center; justify-content:flex-end; gap:10px; text-align:right;">
+      <div class="scan-annotation" style="grid-column:1; grid-row:2; display:flex; align-items:center; justify-content:flex-end; gap:10px; text-align:right;">
         <span style="font-family:'Onest'; font-weight:700; font-size:14px; line-height:1.4; color:#241014;">Саме в цій зоні повинні знаходитися заголовок, текст і CTA.</span>
-        <div style="width:22px; height:1px; background:#620013; flex-shrink:0;"></div>
+        <div class="scan-annotation-line" style="width:22px; height:1px; background:#620013; flex-shrink:0;"></div>
       </div>
       <div style="grid-column:3; grid-row:2;"></div>
       <div style="grid-column:1; grid-row:3;"></div>
-      <div style="grid-column:3; grid-row:3; display:flex; align-items:center; gap:10px;">
-        <div style="width:22px; height:1px; background:#620013; flex-shrink:0;"></div>
+      <div class="scan-annotation" style="grid-column:3; grid-row:3; display:flex; align-items:center; gap:10px;">
+        <div class="scan-annotation-line" style="width:22px; height:1px; background:#620013; flex-shrink:0;"></div>
         <span style="font-family:'Spectral'; font-size:13.5px; line-height:1.4; color:#4a2730;">Тут — поле відповіді та стікери Instagram. CTA має залишатися вище цієї межі.</span>
       </div>
     </div>
