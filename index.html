@@ -56,6 +56,9 @@
     .scan-annotation-top::before { content: "Зверху:"; }
     .scan-annotation-middle::before { content: "В центрі:"; }
     .scan-annotation-bottom::before { content: "Знизу:"; }
+    .highlights-note { position: absolute !important; left: 0 !important; top: 100% !important; transform: none !important; margin-left: 0 !important; margin-top: 10px !important; width: 100% !important; justify-content: center !important; text-align: center !important; }
+    .highlights-note-line { display: none !important; }
+    .highlights-connector { height: 64px !important; }
   }
 </style>
 </helmet>
@@ -1356,8 +1359,8 @@
       </div>
       <div style="height:28px; width:1px; background:#620013;"></div>
       <div style="width:100%; border:2px solid #620013; background:#f6efe1; padding:18px 24px; display:flex; align-items:flex-start; gap:16px; position:relative;">
-        <div style="position:absolute; left:100%; top:50%; transform:translateY(-50%); display:flex; align-items:center; gap:10px; margin-left:16px; width:210px;">
-          <div style="width:22px; height:1px; background:#620013; flex-shrink:0;"></div>
+        <div class="highlights-note" style="position:absolute; left:100%; top:50%; transform:translateY(-50%); display:flex; align-items:center; gap:10px; margin-left:16px; width:210px;">
+          <div class="highlights-note-line" style="width:22px; height:1px; background:#620013; flex-shrink:0;"></div>
           <span style="font-family:'Spectral'; font-size:13px; line-height:1.4; color:#4a2730;">Одне з перших місць, куди дивиться відвідувач.</span>
         </div>
         <div style="display:flex; flex-direction:column; align-items:center; gap:6px;"><div style="width:38px; height:38px; border-radius:50%; border:1.5px solid #620013;"></div><span style="font-family:'Onest'; font-size:9px; color:#8a5560;">About</span></div>
@@ -1366,7 +1369,7 @@
         <div style="display:flex; flex-direction:column; align-items:center; gap:6px;"><div style="width:38px; height:38px; border-radius:50%; border:1.5px dashed rgba(98,0,19,0.4);"></div><span style="font-family:'Onest'; font-size:9px; color:rgba(98,0,19,0.5);">+</span></div>
         <span style="font-family:ui-monospace,monospace; font-size:11px; color:#620013; margin-left:auto; flex-shrink:0; align-self:center;">Highlights</span>
       </div>
-      <div style="height:28px; width:1px; background:#620013;"></div>
+      <div class="highlights-connector" style="height:28px; width:1px; background:#620013;"></div>
       <div style="width:100%; border:1px solid rgba(98,0,19,0.35); padding:20px 24px; display:grid; grid-template-columns:repeat(3,1fr); gap:6px;">
         <div style="aspect-ratio:1; background:rgba(98,0,19,0.12);"></div>
         <div style="aspect-ratio:1; background:rgba(98,0,19,0.12);"></div>
