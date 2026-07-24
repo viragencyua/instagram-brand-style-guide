@@ -60,6 +60,8 @@
     .highlights-note-line { display: none !important; }
     .highlights-connector { height: 64px !important; }
     .organize-grid { grid-template-columns: 1fr !important; }
+    .highlight-journey-row { flex-direction: column !important; gap: 10px !important; }
+    .highlight-journey-arrow { display: none !important; }
   }
 </style>
 </helmet>
@@ -1449,22 +1451,22 @@
     <div style="display:flex; flex-direction:column; align-items:center; margin:clamp(44px,5.5vw,60px) 0 0;">
       <span style="padding: 5px 16px; font-family: Onest; font-size: 11px; color: #620013; margin-bottom: clamp(28px,3.5vw,36px)">Highlight: Services</span>
 
-      <div style="display:flex; align-items:stretch; justify-content:center; width:100%; max-width:1080px;">
+      <div class="highlight-journey-row" style="display:flex; align-items:stretch; justify-content:center; width:100%; max-width:1080px;">
         <div style="flex:1; min-width:0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px; border:1px solid rgba(98,0,19,0.35); padding:28px 14px; text-align:center;">
           <span style="font-family:ui-monospace,monospace; font-size:10px; color:#8a5560;">Story 1</span>
           <span style="font-family:'Onest'; font-weight:600; font-size:15px; line-height:1.3; color:#241014;">Що ми робимо</span>
         </div>
-        <span style="flex-shrink:0; align-self:center; font-family:'Onest'; font-size:20px; color:rgba(98,0,19,0.4); padding:0 clamp(10px,1.4vw,18px);">→</span>
+        <span class="highlight-journey-arrow" style="flex-shrink:0; align-self:center; font-family:'Onest'; font-size:20px; color:rgba(98,0,19,0.4); padding:0 clamp(10px,1.4vw,18px);">→</span>
         <div style="flex:1; min-width:0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px; border:1px solid rgba(98,0,19,0.35); padding:28px 14px; text-align:center;">
           <span style="font-family:ui-monospace,monospace; font-size:10px; color:#8a5560;">Story 2</span>
           <span style="font-family:'Onest'; font-weight:600; font-size:15px; line-height:1.3; color:#241014;">Для кого це</span>
         </div>
-        <span style="flex-shrink:0; align-self:center; font-family:'Onest'; font-size:20px; color:rgba(98,0,19,0.4); padding:0 clamp(10px,1.4vw,18px);">→</span>
+        <span class="highlight-journey-arrow" style="flex-shrink:0; align-self:center; font-family:'Onest'; font-size:20px; color:rgba(98,0,19,0.4); padding:0 clamp(10px,1.4vw,18px);">→</span>
         <div style="flex:1; min-width:0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px; border:1px solid rgba(98,0,19,0.35); padding:28px 14px; text-align:center;">
           <span style="font-family:ui-monospace,monospace; font-size:10px; color:#8a5560;">Story 3</span>
           <span style="font-family:'Onest'; font-weight:600; font-size:15px; line-height:1.3; color:#241014;">Як відбувається процес</span>
         </div>
-        <span style="flex-shrink:0; align-self:center; font-family:'Onest'; font-size:20px; color:rgba(98,0,19,0.4); padding:0 clamp(10px,1.4vw,18px);">→</span>
+        <span class="highlight-journey-arrow" style="flex-shrink:0; align-self:center; font-family:'Onest'; font-size:20px; color:rgba(98,0,19,0.4); padding:0 clamp(10px,1.4vw,18px);">→</span>
         <div style="flex:1; min-width:0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px; border:2px solid #620013; background:#f6efe1; padding:28px 14px; text-align:center;">
           <span style="font-family:ui-monospace,monospace; font-size:10px; color:#620013;">Story 4</span>
           <span style="font-family:'Onest'; font-weight:700; font-size:15px; line-height:1.3; color:#620013;">Контакт / CTA</span>
